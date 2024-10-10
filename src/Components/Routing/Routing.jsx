@@ -6,6 +6,8 @@ import Products from '../Pages/Products'
 import Contact from '../Pages/Contact'
 import DetailsProducts from '../Pages/DetailsProducts'
 import CartPage from '../Pages/CartPage'
+import CheckOut from '../Pages/CheckOut'
+import Signin from '../Pages/Signin'
 
 const Routing = () => {
     return (
@@ -17,6 +19,8 @@ const Routing = () => {
                 <Route path='/contact' element={<Contact />} />
                 <Route path='/products/:id' element={<DetailsProducts />} />
                 <Route path='/cartPage' element={<CartPage />} />
+                <Route path='/checkout' element={<CheckOut />} />
+                <Route path='/signin' element={<Signin />} />
             </Routes>
         </>
     )

@@ -56,7 +56,7 @@ const DetailsProducts = () => {
                             <Grid>
                                 <ButtonComp btnTitle="Add to Cart" onclick={() => {
                                     if (addToCart(data)) {
-                                        productsCount(JSON.parse(localStorage.getItem("carts").length));
+                                        productsCount(JSON.parse(localStorage.getItem("carts")).length);
                                         alert("Products Added!");
                                     } else {
                                         alert("Products Already Exists!");
